@@ -78,7 +78,7 @@ export class Home extends Component{
           {!searchValue && (
             <Button 
               text="Load More Posts"
-              functionOnClick={this.loadMorePosts}
+              onClick={this.loadMorePosts}
               disabled={noMorePosts}
             />  
           )}
