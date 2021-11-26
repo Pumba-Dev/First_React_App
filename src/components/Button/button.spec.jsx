@@ -18,7 +18,7 @@ describe ('<button />', () => {
         expect(mockFunction).toHaveBeenCalledTimes(1);
     });
 
-    it('should be desable when disable is true', () => {
+    it('should be disable when disable is true', () => {
         const mockFunction = jest.fn();
         render(<Button text="text test" onClick={mockFunction} disabled={true} />);
         const $button = screen.getByRole('button', { name: /text test/i });
